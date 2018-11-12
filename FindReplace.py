@@ -44,13 +44,5 @@ def main():
         print ("What phrase would you like to replace? (Hit enter to quit)")
         toFind = raw_input()
 
-def replace(s, r, f, trp):
-    m = r.search(s)
-    if m:
-        st = m.start
-
-        s = s[:m.start()] + s[m.end():]
-        f.write(s)
-
 if __name__ == "__main__":
     main()
